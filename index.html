@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Nubibus Home-Page/Style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Parallax-->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+    <title>Nubibus</title>
+</head>
+
+<body>
+    <header>
+        <!-- navbar precisa alterar tamanho -->
+
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="#" class="navbar-brand">
+                    <img id="logo-cabeca" src="assents/UnionCabeca.svg" alt="cabeca">
+                    <img id="logo" src="assents/nubibos.svg" alt="nibubus">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-item nav-link" id="quemsomos-menu">Quem somos</a>
+                        <a href="Psicologos/index4.html" class="nav-item nav-link" id="psicologos-menu"
+                            onmouseover="show_camada1()" onmouseout="some_tudo()">Psicólogos</a>
+                        <a href="Apoie/apoie.html" class="nav-item nav-link" id="apoie-menu"
+                            onmouseover="show_camada2()" onmouseenter="show_camada2()" onmouseleave="some_tudo()"
+                            onmouseout="some_tudo()">Apoie</a>
+                        <a href="loja_nubibos/loja_principal.html" class="nav-item nav-link" id="loja-menu">Loja</a>
+                        <a href="login.html" class="nav-item nav-link" id="logincadastro-menu">Login / Cadastre -
+                            se</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- primeiro container -->
+                    <div class="containersec1">
+                        <section class="secao1">
+                            <p>Somos a Nubibus -</p>
+                            <h1>Seu guia <br> no cuidado <br>autista para <br> toda a família.</h1>
+                            <div class="section-dentro">
+                                <a href=""><img src="assents/ConhecerNovo.svg" alt=""></a>
+                                <a href="Apoie/apoie.html"><img src="assents/Apoiar.svg"
+                                        alt="botão de apoiar, doação"></a>
+                            </div>
+                        </section>
+                        <section class="secao2">
+                            <img src="assents/familia-negra-vista-frontal-posando-no-estudio.jpg"
+                                alt="familia negra posando no estudio">
+                        </section>
+                    </div>
+                </div>
+
+                <!-- segundo container -->
+                <div class="carousel-item">
+                    <div class="containersec2">
+                        <section class="secao21">
+                            <p id="sec2">Atendimento Psicológico -</p>
+                            <h1>Encontre apoio <br> e recursos<br>valiosos para <br> sua jornada.</h1>
+                            <div class="section-dentro">
+                                <a href=""><img id="gratis" src="assents/Primeira grátis.svg"
+                                        alt="botão de primeira sessão grátis"></a>
+                            </div>
+                        </section>
+                        <section class="secao-crianca">
+                            <img src="assents/plano-de-saude-para-autismo.webp"
+                                alt="Criança brincando com a mãe e seus brincos">
+                        </section>
+                    </div>
+                </div>
+
+                <!-- terceiro container -->
+                <div class="carousel-item">
+                    <div class="containersec3">
+                        <section class="secao11">
+                            <p id="sec3">Acesse nossa Loja -</p>
+                            <h1>Encontre <br> brinquedos<br>sensoriais para <br> o crescimento.</h1>
+                            <div class="section-dentro">
+                                <a href="loja_nubibos/loja_principal.html"><img src="assents/Ver ofertas!.svg" alt="botão de ver ofertas"></a>
+                            </div>
+                        </section>
+                        <section class="secao-loja">
+                            <img src="assents/Screenshot_1.png" alt="Crianca brincando com brinquedos quadriculados">
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <img class="nuvensJeff" src="assents/Group 12.svg" alt="Nuvens"> -->
+
+
+
+        <!-- Parte do Vini -->
+
+        <main class="corpo">
+
+            <section class="informacao">
+                <h1 class="titulo_info">Aqui você encontra o Suporte e informação para sua Família</h1>
+                <div class="container_azul">
+                    <div class="num">
+                        <h1>+55</h1>
+                        <p>Profissionais Qualificados</p>
+                    </div>
+                    <div class="num">
+                        <h1>+2.000.000</h1>
+                        <p>Pessoas com Espectro Autista no Brasil</p>
+                    </div>
+                    <div class="num">
+                        <h1>+720</h1>
+                        <p>Famílias Atentidas</p>
+                    </div>
+                </div>
+
+                <div class="nuvens">
+                    <div id="nuvem1"></div>
+                    <div id="nuvem2"></div>
+                    <div id="nuvem3"></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Parte do hugo, perguntas frequentes -->
+
+
+        <section class="section-s">
+            <div class="container-s">
+                <h1 class="h1Hugo">Perguntas Frequentes:</h1>
+                <div class="carouselHugo">
+                    <div class="card">
+                        <img src="img/imagem1.svg" alt="Diagnosticos">
+                        <h3>Características, Diagnosticos e tratamento</h3>
+                        <button class="btn">saiba mais</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/imagem2.svg" alt="Como desconstruir preconceitos sobre o autismo?">
+                        <h3>Como desconstruir preconceitos sobre o autismo?</h3>
+                        <button class="btn">saiba mais</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="imagem3.svg" alt="O que é o autismo: de uma forma descomplicada">
+                        <h3>O que é o autismo: de uma forma descomplicada</h3>
+                        <button class="btn">saiba mais</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/imagem4.svg" alt="Como criar um ambiente de apoio e compreensão">
+                        <h3> Como criar um ambiente de apoio e compreensão</h3>
+                        <button class="btn">saiba mais</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/imagem5.svg" alt="Quais são os primeiros sinais do autismo?">
+                        <h3>Quais são os primeiros sinais do autismo?</h3>
+                        <button class="btn">saiba mais</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/imagem6.svg" alt="Quais atividades ajudam no desenvolvimento?">
+                        <h3>Quais atividades ajudam no desenvolvimento?</h3>
+                        <button class="btn">saiba mais</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/imagem7.svg" alt="O que saber sobre inclusão escolar?">
+                        <h3>O que saber sobre inclusão escolar?</h3>
+                        <button class="btn">saiba mais</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/imagem8.svg" alt="Como lidar com comportamentos repetitivos?">
+                        <h3>Como lidar com comportamentos repetitivos?</h3>
+                        <button class="btn">saiba mais</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const carouselHugo = document.querySelector('.carouselHugo');
+            let isHovered = false;
+
+            carouselHugo.addEventListener('mouseover', () => {
+                isHovered = true;
+                carouselHugo.style.animationPlayState = 'paused';
+            });
+
+            carouselHugo.addEventListener('mouseout', () => {
+                isHovered = false;
+                carouselHugo.style.animationPlayState = 'running';
+            });
+        </script>
+
+
+        <!-- PARTE HUGO PARCERIA -->
+        <section class="section-p">
+            <div class="Containerz">
+                <h1 class="h1hugo2">Parcerias que fazem a diferença:</h1>
+                <div class="partners-container">
+                    <div class="partners partners-row1">
+                        <img src="img/imagemDM.png" alt="DM">
+                        <img id="Santarder" src="img/sants.png" alt="Santander">
+                        <img src="img/senac.png" alt="SENAC">
+                        <img src="img/autismoTech.png" alt="Austimo-Tech">
+                        <img id="passos" src="img/passos da criança.png" alt="Passos de criança">
+                        <img src="img/PROA.png" alt="PROA">
+                        <img src="img/Pingo.png" alt="Pingo de gente">
+                    </div>
+
+                    <div class="partners partners-row2">
+                        <!-- <img src="../mg/oracle.png" alt="ORACLE"> -->
+                        <img src="img/GAAP.png" alt="GAAP">
+                        <img id="estrela" src="img/estrela.png" alt="Estrela">
+                        <img src="img/Alegria da criança.png" alt="Alegria da criança">
+                        <img src="img/Fundação abrino.png" alt="Fundação Abrino">
+                        <img src="img/CACC.png" alt="CACC">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Crie uma conta nibubus -->
+
+        <section class="Criar">
+            <div class="box-pink">
+                <h1>Crie um conta na Nubibos!</h1>
+                <p>e <span style="font-weight: bold;">agende sua primeira sessão <br>gratuita</span> com um <span
+                        style="font-weight: bold;">psicólogo especializado</span></p>
+                <p class="apoiar">Estamos aqui para apoiar você em cada passo.</p>
+                <img class="button" src="img/button1.svg" alt="Agende uma sessão">
+            </div>
+            <div>
+                <img class="pessoa" src="img/pessoaescrevendo.png" alt="">
+            </div>
+        </section>
+
+        <!-- Footer do Vini -->
+
+
+        <footer>
+            <section id="container_footer">
+                <div class="column">
+                    <p class="titulo_footer">Sobre a Nubibos</p>
+                    <a href="#">Sobre nós</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Serviço</a>
+                    <a href="#">FAQ (Perguntas <br> Frequentes)</a>
+                    <a href="#">Formulário de contato <br> ou suporte</a>
+                </div>
+                <div class="column">
+                    <p class="titulo_footer">Endereço</p>
+                    <p>R. Tito, 54 - Vila <br> Romana São Paulo - <br> SP, 05051-000</p>
+                </div>
+                <div class="column">
+                    <p class="titulo_footer">Parceiros</p>
+                    <a href="#">Instituto Proa</a>
+                    <a href="#">Senac</a>
+                    <a href="#">Santander Brasil</a>
+                    <a href="#">Estrelas Brinquedos</a>
+                </div>
+
+                <div class="column">
+                    <p class="titulo_footer">Redes Sociais</p>
+                    <div id="redes">
+                        <div class="icones_redes">
+                            <img class="footerVini" src="img_footer/icon-instagram.png" alt="instagram"
+                                title="instagram">
+                            <a href="#"> /nubibos</a>
+                        </div>
+                        <div class="icones_redes">
+                            <img class="footerVini" src="img_footer/icon-facebook.png" alt="facebook" title="facebook">
+                            <a href="#"> /nubibos</a>
+                        </div>
+                        <div class="icones_redes">
+                            <img class="footerVini" src="img_footer/icon-youtube.png" alt="youtube" title="youtube">
+                            <a href="#"> /nubibosbrasil</a>
+                        </div>
+                        <div class="icones_redes">
+                            <img class="footerVini" src="img_footer/icon-whatsapp.png" alt="whatsapp" title="whatsapp">
+                            <a href="#"> (11) 98765-4321</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <div id="logo_nubibos_footer">
+                <img class="footerVini" src="img_footer/logo_footer.png" alt="logo nubibos" title="logo nubibos">
+                <p>&copy 2024 Nubibos.</p>
+                <p>Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+        <!-- Drop da nav -->
+        <div id="camada1" class="dropPsicologo">
+            <a href="Psicologos/index4.html">Nossos Psicólogos</a>
+            <a href="Psicologos/index4.html">Primeira Consulta</a>
+            <a href="Psicologos/index4.html">Dúvidas</a>
+            <a href="Psicologos/index4.html">Depoimentos</a>
+        </div>
+
+        <div id="camada2" class="dropApoie">
+            <a href="Apoie/apoie.html">Contribuir</a>
+            <a href="Apoie/apoie.html">Parceiros</a>
+        </div>
+
+
+    </main>
+    <script src="javascriptb.js"></script>
+</body>
+
+</html>

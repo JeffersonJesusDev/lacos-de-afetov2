@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Nunito", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+    background-color: #FFFFFF;
+}
+
+.section-m {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+
+/*nav bar*/
+.navbar{
+    width: 77%;
+    height: 70px;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    background-color: #1376ff;
+}
+
+.navbar a{
+    margin-right: 40px;
+}
+
+
+.row{
+    margin: 0;
+}
+
+.navbar-brand{
+    margin-left: 20px;
+}
+
+
+#logincadastro-menu{
+    background-color: #D5941D;
+    border-radius: 10px;
+    margin-left: 92px;
+}
+
+#navbar-links a{
+    color: #fff;
+}
+
+#navbar-links a:hover{
+    color: #083b83;
+}
+
+.espaco-em-branco{
+    width: 130px;
+}
+
+.navbar-expand-lg {
+  
+}
+
+/* O contêiner que controla a rolagem */
+.swiper-wrapper {
+    overflow: hidden;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tituloo h1{
+    margin-top: 130px;
+    text-align: center;
+    font-size: 64px;
+    color: #157A6E;
+}
+
+.tituloo p{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #157A6E;
+
+}
+
+.carousel2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    position: relative;
+}
+
+.swiper-slide{
+    align-items: center;
+}
+
+.swiper-slide {
+    min-width: calc(100% / 3); /* Exibindo 3 slides ao mesmo tempo */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Setas de navegação */
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: transparent;
+    color: white;
+    padding: 30px;
+    border-radius: 50px;
+    border: 3px solid #157A6E;
+    cursor: pointer;
+
+}
+
+.swiper-button-next .swiper-button-prev {
+    color: #157A6E;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    color: #D5941D; /* Cor de destaque quando o botão for sobreposto */
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.arrow-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prev{
+    left: 10px;
+}
+
+#next{
+    right: 10px;
+}
+.arrow-button img{
+    width: 60px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.arrow-button:hover img {
+    transform: scale(1.2);
+}
+
+.cardss{
+    display: flex;
+    overflow: hidden;
+    width: 66%;
+    justify-content: center;
+    transition: transform 0,5s ease-in-out;
+    gap: 10px;
+}
+
+.cards{
+        flex-shrink: 0;
+        width: 300px;
+        margin: 0 80px;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3 ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* garantir que o conteúdo do card fique centralizado */
+}
+
+.cards img{
+    width: 100%;
+    
+}
+
+.card-content{
+    height: 100%;
+    background-color: rgba(21, 122, 110, 0.9); /* Ajustar o tom de verde */
+    color: #FFFFFF;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 10px;
+    display: none; /* Continua oculto até hover */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.cards:hover .card-content {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+}
+
+.card-content .agendar {
+    width: 80%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.card-content button:hover {
+    background-image: ("");
+    background-color: #ffca28;
+}
+
+/*section principais dúvidas*/
+
+.section-c{
+    width: 100%;
+    height: 100vh;
+    margin-top: 60px;
+}
+
+.containerr {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.containerr h1{
+    color: #ffca28;
+    font-size: 64px;
+    
+}
+.accordion {
+    background-color: #D5941D;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 18px;
+    margin-top: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    height: 100px;
+    font-size: 24px;
+    border-radius: 15px;
+}
+
+.accordion:hover{
+    border: 3px solid #157A6E;
+}
+
+.panel {
+    font-size: 24px;
+    border-radius: 15px;
+    padding: 15px 24px;
+    color: #FFFFFF;
+    background-color: #157A6E;
+    display: none;
+    margin-top: 15px;
+    
+}
+
+/*final section principais dúvidas*/
+
+/* Estilos gerais da seção de depoimentos */
+.section-coment {
+    width: 100%;
+    height: 70vh;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.section-coment h2 {
+    align-items: left;
+    font-size: 64px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    color: #ffca28;
+}
+
+/* Container do carousel */
+.container-n {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+     /* Esconde os elementos que saem da área visível */
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    gap: 20px; /* Espaço entre os cards */
+    overflow-x: scroll; /* Permite rolagem horizontal */
+    scroll-behavior: smooth; /* Rola suavemente */
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; /* Esconde a barra de rolagem */
+}
+
+/* Estilos dos cards */
+.cardz {
+    flex: 0 0 auto; /* Garante que os cards não encolham */
+    width: 250px; /* Largura fixa dos cards */
+    background-color: #157A6E;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cardz:hover {
+    transform: translateY(-10px); /* Efeito ao passar o mouse sobre o card */
+}
+
+/* Estilos da imagem dentro do card */
+.cardz img {
+    width: 40px; /* Tamanho da imagem */
+    float: left;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+/* Nome e estrelas do card */
+.cardz h3 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.cardz .stars {
+    color: #f39c12;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+/* Texto do depoimento */
+.cardz p {
+    text-align: left;
+    font-size: 1rem;
+    color: #FFFFFF;
+    line-height: 1.5;
+}
+
+/* Botões de navegação */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .carousel {
+        gap: 10px;
+    }
+
+    .cardz {
+        width: 200px; /* Ajusta a largura dos cards em telas menores */
+    }
+
+    .prev, .next {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+}
+
+/*final da sessão depoimento*/
+
+/*começo da sessão proximo passo*/
+.section-step{
+    font-family: "Nunito", sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-09 {
+    background-image: url('img-psicologos/meninoesenhora.svg'); /* Substitua 'your-image.jpg' pelo caminho da imagem */
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Altura da tela inteira */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 128, 128, 0.5); /* Cor de fundo com transparência */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+h1{
+    margin-top: 120px;
+}
+
+.overlay button {
+    background-color: #d9a439; /* Cor do botão */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.overlay button:hover {
+    background-color: #FFFFFF; /* Cor do botão ao passar o mouse */
+    color: #f39c12;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+footer{
+    height: auto;
+    font-family: "Nunito", sans-serif;
+    background-color: #157A6E;
+    color: white;
+}
+
+#container_footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#container_footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_footer{
+    padding-top: 40px;
+    padding-bottom: 12px;    
+    font-weight: 700;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 12px;
+}
+#logo_nubibos_footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.36rem;
+}
+#redes>.icones_redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#redes a{
+    margin-top: 10px;
+
+}
+footer img{
+   width: 30px; 
+}
+#logo_nubibos_footer{
+    padding: 15px;
+}
+#logo_nubibos_footer>img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+#logo_nubibos_footer>p{
+    font-size: 0.6rem;
+}
